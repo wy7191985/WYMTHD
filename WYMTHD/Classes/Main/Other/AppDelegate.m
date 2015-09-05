@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "WYNavigationController.h"
+#import "WYHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    WYHomeViewController *homeVc = [[WYHomeViewController alloc] init];
+    WYNavigationController *nav = [[WYNavigationController alloc] initWithRootViewController:homeVc];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 

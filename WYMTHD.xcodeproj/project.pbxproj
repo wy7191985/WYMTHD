@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89608A471B9ABF1E00C910B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89608A461B9ABF1E00C910B1 /* main.m */; };
-		89608A4A1B9ABF1E00C910B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89608A491B9ABF1E00C910B1 /* AppDelegate.m */; };
 		89608A521B9ABF1E00C910B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89608A511B9ABF1E00C910B1 /* Images.xcassets */; };
 		89608A611B9ABF1E00C910B1 /* WYMTHDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89608A601B9ABF1E00C910B1 /* WYMTHDTests.m */; };
+		89D14E741B9AC29500809099 /* WYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D14E731B9AC29500809099 /* WYHomeViewController.m */; };
+		89D14E781B9AC2C500809099 /* WYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D14E771B9AC2C500809099 /* WYNavigationController.m */; };
+		89D14E7D1B9AC2E500809099 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D14E7B1B9AC2E500809099 /* AppDelegate.m */; };
+		89D14E7E1B9AC2E500809099 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D14E7C1B9AC2E500809099 /* main.m */; };
+		89D14E8D1B9ACAEC00809099 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D14E8B1B9ACAEC00809099 /* UIBarButtonItem+Extension.m */; };
+		89D14E901B9ACB7900809099 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D14E8F1B9ACB7900809099 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,13 +30,22 @@
 /* Begin PBXFileReference section */
 		89608A411B9ABF1E00C910B1 /* WYMTHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYMTHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89608A451B9ABF1E00C910B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89608A461B9ABF1E00C910B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		89608A481B9ABF1E00C910B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		89608A491B9ABF1E00C910B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		89608A511B9ABF1E00C910B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89608A5A1B9ABF1E00C910B1 /* WYMTHDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYMTHDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89608A5F1B9ABF1E00C910B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89608A601B9ABF1E00C910B1 /* WYMTHDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYMTHDTests.m; sourceTree = "<group>"; };
+		89D14E721B9AC29500809099 /* WYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYHomeViewController.h; sourceTree = "<group>"; };
+		89D14E731B9AC29500809099 /* WYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYHomeViewController.m; sourceTree = "<group>"; };
+		89D14E761B9AC2C500809099 /* WYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNavigationController.h; sourceTree = "<group>"; };
+		89D14E771B9AC2C500809099 /* WYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNavigationController.m; sourceTree = "<group>"; };
+		89D14E7A1B9AC2E500809099 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		89D14E7B1B9AC2E500809099 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		89D14E7C1B9AC2E500809099 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89D14E7F1B9AC61F00809099 /* WYMTHD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WYMTHD-Prefix.pch"; sourceTree = "<group>"; };
+		89D14E8A1B9ACAEC00809099 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		89D14E8B1B9ACAEC00809099 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		89D14E8E1B9ACB7900809099 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		89D14E8F1B9ACB7900809099 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +87,7 @@
 		89608A431B9ABF1E00C910B1 /* WYMTHD */ = {
 			isa = PBXGroup;
 			children = (
-				89608A481B9ABF1E00C910B1 /* AppDelegate.h */,
-				89608A491B9ABF1E00C910B1 /* AppDelegate.m */,
+				89D14E671B9AC27100809099 /* Classes */,
 				89608A511B9ABF1E00C910B1 /* Images.xcassets */,
 				89608A441B9ABF1E00C910B1 /* Supporting Files */,
 			);
@@ -86,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				89608A451B9ABF1E00C910B1 /* Info.plist */,
-				89608A461B9ABF1E00C910B1 /* main.m */,
+				89D14E7F1B9AC61F00809099 /* WYMTHD-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -106,6 +118,88 @@
 				89608A5F1B9ABF1E00C910B1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89D14E671B9AC27100809099 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				89D14E681B9AC27100809099 /* Home */,
+				89D14E6C1B9AC27100809099 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		89D14E681B9AC27100809099 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				89D14E6A1B9AC27100809099 /* Model */,
+				89D14E6B1B9AC27100809099 /* View */,
+				89D14E691B9AC27100809099 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		89D14E691B9AC27100809099 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89D14E721B9AC29500809099 /* WYHomeViewController.h */,
+				89D14E731B9AC29500809099 /* WYHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		89D14E6A1B9AC27100809099 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89D14E6B1B9AC27100809099 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89D14E6C1B9AC27100809099 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				89D14E871B9ACAEC00809099 /* Category */,
+				89D14E791B9AC2E500809099 /* Other */,
+				89D14E751B9AC2AA00809099 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		89D14E751B9AC2AA00809099 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89D14E761B9AC2C500809099 /* WYNavigationController.h */,
+				89D14E771B9AC2C500809099 /* WYNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		89D14E791B9AC2E500809099 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				89D14E7A1B9AC2E500809099 /* AppDelegate.h */,
+				89D14E7B1B9AC2E500809099 /* AppDelegate.m */,
+				89D14E7C1B9AC2E500809099 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		89D14E871B9ACAEC00809099 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				89D14E8E1B9ACB7900809099 /* UIView+Extension.h */,
+				89D14E8F1B9ACB7900809099 /* UIView+Extension.m */,
+				89D14E8A1B9ACAEC00809099 /* UIBarButtonItem+Extension.h */,
+				89D14E8B1B9ACAEC00809099 /* UIBarButtonItem+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89608A4A1B9ABF1E00C910B1 /* AppDelegate.m in Sources */,
-				89608A471B9ABF1E00C910B1 /* main.m in Sources */,
+				89D14E901B9ACB7900809099 /* UIView+Extension.m in Sources */,
+				89D14E741B9AC29500809099 /* WYHomeViewController.m in Sources */,
+				89D14E781B9AC2C500809099 /* WYNavigationController.m in Sources */,
+				89D14E7E1B9AC2E500809099 /* main.m in Sources */,
+				89D14E8D1B9ACAEC00809099 /* UIBarButtonItem+Extension.m in Sources */,
+				89D14E7D1B9AC2E500809099 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +415,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WYMTHD/WYMTHD-Prefix.pch";
 				INFOPLIST_FILE = WYMTHD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -328,6 +428,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WYMTHD/WYMTHD-Prefix.pch";
 				INFOPLIST_FILE = WYMTHD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
