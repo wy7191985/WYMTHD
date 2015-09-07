@@ -7,8 +7,14 @@
 //
 
 #import "WYHomeViewController.h"
+#import "WYHomeTopItem.h"
+#import "WYHomeDropDown.h"
 
 @interface WYHomeViewController ()
+/** 分类item */
+@property (nonatomic, strong) UIBarButtonItem *categoryItem;
+
+
 
 @end
 
@@ -27,17 +33,55 @@ static NSString * const reuseIdentifier = @"Cell";
     // Register cell classes
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    // 1.设置导航栏右边按钮
+    // 1.设置导航栏右边控件
     [self setupRightBarButtonItems];
+    // 2.设置导航栏左边控件
+    [self setupLeftBarButtonItems];
+}
+/**
+ *  设置导航栏左边控件
+ */
+- (void)setupLeftBarButtonItems
+{
+    // 1.logo
+    UIImageView *logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_meituan_logo"]];
+    UIBarButtonItem *logoItem = [[UIBarButtonItem alloc] initWithCustomView:logoView];
+    // 2.分类
+    WYHomeTopItem *catecory = [WYHomeTopItem homeTopItem];
+    self.categoryItem = [[UIBarButtonItem alloc] initWithCustomView:catecory];
+    // 绑定监听方法
+    [catecory addTarget:self action:@selector(categotyClick)];
+    
+    // 3.区域
+    WYHomeTopItem *region = [WYHomeTopItem homeTopItem];
+    UIBarButtonItem *regionItem = [[UIBarButtonItem alloc] initWithCustomView:region];
+    // 4.排序
+    WYHomeTopItem *sort = [WYHomeTopItem homeTopItem];
+    UIBarButtonItem *sortItem = [[UIBarButtonItem alloc] initWithCustomView:sort];
+    self.navigationItem.leftBarButtonItems = @[logoItem, self.categoryItem, regionItem, sortItem];
+    
+}
+/**
+ *  分类按钮的监听
+ */
+- (void)categotyClick
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view = [WYHomeDropDown homeDropDown];
+    
+    UIPopoverController *popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    [popover presentPopoverFromRect:self.categoryItem.customView.bounds inView:self.categoryItem.customView permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
 /**
- *  设置导航栏右边按钮
+ *  设置导航栏右边控件
  */
 - (void)setupRightBarButtonItems
 {
+    // 1.搜索
     UIBarButtonItem *searchItem = [UIBarButtonItem itemWithImageNamed:@"icon_search" highlightedImage:@"icon_search_highlighted" target:nil action:nil];
     searchItem.customView.width = 100;
+    // 2.地图
     UIBarButtonItem *mapItem = [UIBarButtonItem itemWithImageNamed:@"icon_map" highlightedImage:@"icon_map_highlighted" target:nil action:nil];
     mapItem.customView.width = 100;
     self.navigationItem.rightBarButtonItems = @[mapItem, searchItem];
