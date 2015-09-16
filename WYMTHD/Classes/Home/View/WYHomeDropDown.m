@@ -8,6 +8,8 @@
 
 #import "WYHomeDropDown.h"
 #import "WYCatagory.h"
+#import "WYDropDownMainCell.h"
+#import "WYDropDownSubCell.h"
 
 @interface WYHomeDropDown () <UITableViewDataSource, UITableViewDelegate>
 /** 主表 */
@@ -56,11 +58,7 @@
     
     UITableViewCell *cell = nil;
     if (tableView == self.mainTableView) { // 是主表
-        static NSString *ID = @"main";
-        cell = [tableView dequeueReusableCellWithIdentifier:ID];
-        if (!cell) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-        }
+        cell = [WYDropDownMainCell dropDownMainCellWith:tableView];
         WYCatagory *category = self.catagories[indexPath.row];
         cell.textLabel.text = category.name;
         if (category.subcategories) { //有子分类
@@ -69,11 +67,8 @@
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
     } else { // 是从表
-        static NSString *ID = @"sub";
-        cell = [tableView dequeueReusableCellWithIdentifier:ID];
-        if (!cell) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-        }
+        
+        cell = [WYDropDownSubCell dropDownSubCellWith:tableView];
         cell.textLabel.text = self.currentSelectedCategory.subcategories[indexPath.row];
         
     }
