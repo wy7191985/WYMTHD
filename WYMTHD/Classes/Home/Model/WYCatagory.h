@@ -19,5 +19,7 @@
 @property (nonatomic, copy) NSString *small_icon;
 /** 分类的高亮小图标 */
 @property (nonatomic, copy) NSString *small_highlighted_icon;
+/** 分类的从表分类 */
+@property (nonatomic, strong) NSArray *subcategories;
 
 @end

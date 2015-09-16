@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -7,16 +7,24 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WYHomeDropDown">
-            <rect key="frame" x="0.0" y="4" width="335" height="334"/>
+            <rect key="frame" x="0.0" y="0.0" width="400" height="380"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Y6x-82-OW5" userLabel="左边tableView">
-                    <rect key="frame" x="0.0" y="0.0" width="168" height="334"/>
-                    <color key="backgroundColor" red="0.2196078598" green="0.76862752440000004" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
-                </tableView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NpT-4q-T5s" userLabel="右边tablView">
-                    <rect key="frame" x="168" y="0.0" width="167" height="334"/>
+                    <rect key="frame" x="200" y="0.0" width="200" height="380"/>
                     <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="njW-q3-0vx"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Ze7-H2-iWy"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Y6x-82-OW5" userLabel="左边tableView">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="380"/>
+                    <color key="backgroundColor" red="0.2196078598" green="0.76862752440000004" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="TqH-pL-w4I"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Ueg-mG-NwD"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="0.080137917000000003" green="0.83962384320000005" blue="0.99067676069999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -32,7 +40,11 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="198.5" y="305"/>
+            <connections>
+                <outlet property="mainTableView" destination="Y6x-82-OW5" id="FgB-P6-wBY"/>
+                <outlet property="subTableView" destination="NpT-4q-T5s" id="fLx-ue-dA0"/>
+            </connections>
+            <point key="canvasLocation" x="251" y="305"/>
         </view>
     </objects>
 </document>

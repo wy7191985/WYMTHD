@@ -173,19 +173,20 @@
 		89D14E671B9AC27100809099 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				89D14E681B9AC27100809099 /* Home */,
+				89D14E681B9AC27100809099 /* Home(首页) */,
 				89D14E6C1B9AC27100809099 /* Main(主要) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		89D14E681B9AC27100809099 /* Home */ = {
+		89D14E681B9AC27100809099 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
 				BAF5435D1B9D2B8700F23D26 /* Model */,
 				BAF5435E1B9D2B8700F23D26 /* View */,
 				89D14E691B9AC27100809099 /* Controller */,
 			);
+			name = "Home(首页)";
 			path = Home;
 			sourceTree = "<group>";
 		};

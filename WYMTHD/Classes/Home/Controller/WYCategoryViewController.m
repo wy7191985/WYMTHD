@@ -20,9 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 1.添加下拉菜单到控制器view上
-    self.view = [WYHomeDropDown homeDropDown];
-    // 2.加载分类的plist数据
-    NSArray *array = [WYCatagory objectArrayWithFilename:@"categories.plist"];
+    WYHomeDropDown *dropDown = [WYHomeDropDown homeDropDown];
+    [self.view addSubview:dropDown];
+    // 2.加载分类的plist数据,传值给菜单
+    dropDown.catagories = [WYCatagory objectArrayWithFilename:@"categories.plist"];
+    // 3.设置控制器view在popover中的尺寸
+    self.preferredContentSize = dropDown.frame.size;
     
     
 }
