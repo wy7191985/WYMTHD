@@ -19,6 +19,16 @@
 		BA1E19821BA9105C00C3626F /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA1E197E1BA9105C00C3626F /* cities.plist */; };
 		BA1E19831BA9105C00C3626F /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA1E197F1BA9105C00C3626F /* cityGroups.plist */; };
 		BA1E19841BA9105C00C3626F /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA1E19801BA9105C00C3626F /* sorts.plist */; };
+		BA1E19871BA9132300C3626F /* WYCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E19861BA9132300C3626F /* WYCategoryViewController.m */; };
+		BA1E198A1BA9146400C3626F /* WYCatagory.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E19891BA9146400C3626F /* WYCatagory.m */; };
+		BA1E199E1BA9169A00C3626F /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E198F1BA9169A00C3626F /* MJExtensionConst.m */; };
+		BA1E199F1BA9169A00C3626F /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E19911BA9169A00C3626F /* MJFoundation.m */; };
+		BA1E19A01BA9169A00C3626F /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E19931BA9169A00C3626F /* MJProperty.m */; };
+		BA1E19A11BA9169A00C3626F /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E19951BA9169A00C3626F /* MJType.m */; };
+		BA1E19A21BA9169A00C3626F /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E19971BA9169A00C3626F /* NSObject+MJCoding.m */; };
+		BA1E19A31BA9169A00C3626F /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E19991BA9169A00C3626F /* NSObject+MJKeyValue.m */; };
+		BA1E19A41BA9169A00C3626F /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E199B1BA9169A00C3626F /* NSObject+MJProperty.m */; };
+		BA1E19A51BA9169A00C3626F /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1E199D1BA9169A00C3626F /* NSString+MJExtension.m */; };
 		BAF543611B9D2B9F00F23D26 /* WYHomeTopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF543601B9D2B9F00F23D26 /* WYHomeTopItem.m */; };
 		BAF543631B9D2BBC00F23D26 /* WYHomeTopItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF543621B9D2BBC00F23D26 /* WYHomeTopItem.xib */; };
 		BAF543661B9D320700F23D26 /* WYHomeDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF543651B9D320700F23D26 /* WYHomeDropDown.m */; };
@@ -58,6 +68,27 @@
 		BA1E197E1BA9105C00C3626F /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
 		BA1E197F1BA9105C00C3626F /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
 		BA1E19801BA9105C00C3626F /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		BA1E19851BA9132300C3626F /* WYCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCategoryViewController.h; sourceTree = "<group>"; };
+		BA1E19861BA9132300C3626F /* WYCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCategoryViewController.m; sourceTree = "<group>"; };
+		BA1E19881BA9146400C3626F /* WYCatagory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCatagory.h; sourceTree = "<group>"; };
+		BA1E19891BA9146400C3626F /* WYCatagory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCatagory.m; sourceTree = "<group>"; };
+		BA1E198D1BA9169A00C3626F /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		BA1E198E1BA9169A00C3626F /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		BA1E198F1BA9169A00C3626F /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		BA1E19901BA9169A00C3626F /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		BA1E19911BA9169A00C3626F /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		BA1E19921BA9169A00C3626F /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		BA1E19931BA9169A00C3626F /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		BA1E19941BA9169A00C3626F /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		BA1E19951BA9169A00C3626F /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		BA1E19961BA9169A00C3626F /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		BA1E19971BA9169A00C3626F /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		BA1E19981BA9169A00C3626F /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		BA1E19991BA9169A00C3626F /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		BA1E199A1BA9169A00C3626F /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		BA1E199B1BA9169A00C3626F /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		BA1E199C1BA9169A00C3626F /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		BA1E199D1BA9169A00C3626F /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		BAF5435F1B9D2B9F00F23D26 /* WYHomeTopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYHomeTopItem.h; sourceTree = "<group>"; };
 		BAF543601B9D2B9F00F23D26 /* WYHomeTopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYHomeTopItem.m; sourceTree = "<group>"; };
 		BAF543621B9D2BBC00F23D26 /* WYHomeTopItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYHomeTopItem.xib; sourceTree = "<group>"; };
@@ -143,7 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				89D14E681B9AC27100809099 /* Home */,
-				89D14E6C1B9AC27100809099 /* Main */,
+				89D14E6C1B9AC27100809099 /* Main(主要) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -163,17 +194,21 @@
 			children = (
 				89D14E721B9AC29500809099 /* WYHomeViewController.h */,
 				89D14E731B9AC29500809099 /* WYHomeViewController.m */,
+				BA1E19851BA9132300C3626F /* WYCategoryViewController.h */,
+				BA1E19861BA9132300C3626F /* WYCategoryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		89D14E6C1B9AC27100809099 /* Main */ = {
+		89D14E6C1B9AC27100809099 /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				BA1E198B1BA9168900C3626F /* Lib */,
 				89D14E871B9ACAEC00809099 /* Category */,
 				89D14E791B9AC2E500809099 /* Other */,
 				89D14E751B9AC2AA00809099 /* Controller */,
 			);
+			name = "Main(主要)";
 			path = Main;
 			sourceTree = "<group>";
 		};
@@ -218,9 +253,43 @@
 			path = Plist;
 			sourceTree = "<group>";
 		};
+		BA1E198B1BA9168900C3626F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				BA1E198C1BA9169A00C3626F /* MJExtension */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		BA1E198C1BA9169A00C3626F /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BA1E198D1BA9169A00C3626F /* MJExtension.h */,
+				BA1E198E1BA9169A00C3626F /* MJExtensionConst.h */,
+				BA1E198F1BA9169A00C3626F /* MJExtensionConst.m */,
+				BA1E19901BA9169A00C3626F /* MJFoundation.h */,
+				BA1E19911BA9169A00C3626F /* MJFoundation.m */,
+				BA1E19921BA9169A00C3626F /* MJProperty.h */,
+				BA1E19931BA9169A00C3626F /* MJProperty.m */,
+				BA1E19941BA9169A00C3626F /* MJType.h */,
+				BA1E19951BA9169A00C3626F /* MJType.m */,
+				BA1E19961BA9169A00C3626F /* NSObject+MJCoding.h */,
+				BA1E19971BA9169A00C3626F /* NSObject+MJCoding.m */,
+				BA1E19981BA9169A00C3626F /* NSObject+MJKeyValue.h */,
+				BA1E19991BA9169A00C3626F /* NSObject+MJKeyValue.m */,
+				BA1E199A1BA9169A00C3626F /* NSObject+MJProperty.h */,
+				BA1E199B1BA9169A00C3626F /* NSObject+MJProperty.m */,
+				BA1E199C1BA9169A00C3626F /* NSString+MJExtension.h */,
+				BA1E199D1BA9169A00C3626F /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
 		BAF5435D1B9D2B8700F23D26 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA1E19881BA9146400C3626F /* WYCatagory.h */,
+				BA1E19891BA9146400C3626F /* WYCatagory.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -342,14 +411,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1E19A31BA9169A00C3626F /* NSObject+MJKeyValue.m in Sources */,
+				BA1E199E1BA9169A00C3626F /* MJExtensionConst.m in Sources */,
 				89D14E901B9ACB7900809099 /* UIView+Extension.m in Sources */,
 				BAF543661B9D320700F23D26 /* WYHomeDropDown.m in Sources */,
+				BA1E199F1BA9169A00C3626F /* MJFoundation.m in Sources */,
+				BA1E19A11BA9169A00C3626F /* MJType.m in Sources */,
+				BA1E19A01BA9169A00C3626F /* MJProperty.m in Sources */,
 				89D14E741B9AC29500809099 /* WYHomeViewController.m in Sources */,
+				BA1E19A51BA9169A00C3626F /* NSString+MJExtension.m in Sources */,
 				89D14E781B9AC2C500809099 /* WYNavigationController.m in Sources */,
 				89D14E7E1B9AC2E500809099 /* main.m in Sources */,
+				BA1E198A1BA9146400C3626F /* WYCatagory.m in Sources */,
 				89D14E8D1B9ACAEC00809099 /* UIBarButtonItem+Extension.m in Sources */,
 				BAF543611B9D2B9F00F23D26 /* WYHomeTopItem.m in Sources */,
+				BA1E19A41BA9169A00C3626F /* NSObject+MJProperty.m in Sources */,
 				89D14E7D1B9AC2E500809099 /* AppDelegate.m in Sources */,
+				BA1E19871BA9132300C3626F /* WYCategoryViewController.m in Sources */,
+				BA1E19A21BA9169A00C3626F /* NSObject+MJCoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

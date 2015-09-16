@@ -9,6 +9,7 @@
 #import "WYHomeViewController.h"
 #import "WYHomeTopItem.h"
 #import "WYHomeDropDown.h"
+#import "WYCategoryViewController.h"
 
 @interface WYHomeViewController ()
 /** 分类item */
@@ -62,15 +63,21 @@ static NSString * const reuseIdentifier = @"Cell";
     
 }
 /**
- *  分类按钮的监听
+ *  分类按钮的监听(弹出popover)
  */
 - (void)categotyClick
 {
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view = [WYHomeDropDown homeDropDown];
+    WYCategoryViewController *vc = [[WYCategoryViewController alloc] init];
     
-    UIPopoverController *popover = [[UIPopoverController alloc] initWithContentViewController:vc];
-    [popover presentPopoverFromRect:self.categoryItem.customView.bounds inView:self.categoryItem.customView permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    //iOS8新写法,ui统一不是push 就是modal出来的
+    // 设置控制器modal出来的类型
+    vc.modalPresentationStyle = UIModalPresentationPopover;
+    vc.popoverPresentationController.sourceView = self.categoryItem.customView;
+    vc.popoverPresentationController.sourceRect = self.categoryItem.customView.bounds;
+    [self presentViewController:vc animated:YES completion:nil];
+    
+//    UIPopoverController *popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+//    [popover presentPopoverFromRect:self.categoryItem.customView.bounds inView:self.categoryItem.customView permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
 /**
