@@ -15,6 +15,10 @@
 		89D14E7E1B9AC2E500809099 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D14E7C1B9AC2E500809099 /* main.m */; };
 		89D14E8D1B9ACAEC00809099 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D14E8B1B9ACAEC00809099 /* UIBarButtonItem+Extension.m */; };
 		89D14E901B9ACB7900809099 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D14E8F1B9ACB7900809099 /* UIView+Extension.m */; };
+		BA1E19811BA9105C00C3626F /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA1E197D1BA9105C00C3626F /* categories.plist */; };
+		BA1E19821BA9105C00C3626F /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA1E197E1BA9105C00C3626F /* cities.plist */; };
+		BA1E19831BA9105C00C3626F /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA1E197F1BA9105C00C3626F /* cityGroups.plist */; };
+		BA1E19841BA9105C00C3626F /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA1E19801BA9105C00C3626F /* sorts.plist */; };
 		BAF543611B9D2B9F00F23D26 /* WYHomeTopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF543601B9D2B9F00F23D26 /* WYHomeTopItem.m */; };
 		BAF543631B9D2BBC00F23D26 /* WYHomeTopItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF543621B9D2BBC00F23D26 /* WYHomeTopItem.xib */; };
 		BAF543661B9D320700F23D26 /* WYHomeDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF543651B9D320700F23D26 /* WYHomeDropDown.m */; };
@@ -50,6 +54,10 @@
 		89D14E8B1B9ACAEC00809099 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		89D14E8E1B9ACB7900809099 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		89D14E8F1B9ACB7900809099 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		BA1E197D1BA9105C00C3626F /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		BA1E197E1BA9105C00C3626F /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		BA1E197F1BA9105C00C3626F /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		BA1E19801BA9105C00C3626F /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
 		BAF5435F1B9D2B9F00F23D26 /* WYHomeTopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYHomeTopItem.h; sourceTree = "<group>"; };
 		BAF543601B9D2B9F00F23D26 /* WYHomeTopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYHomeTopItem.m; sourceTree = "<group>"; };
 		BAF543621B9D2BBC00F23D26 /* WYHomeTopItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYHomeTopItem.xib; sourceTree = "<group>"; };
@@ -107,6 +115,7 @@
 		89608A441B9ABF1E00C910B1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA1E197C1BA9105C00C3626F /* Plist */,
 				89608A451B9ABF1E00C910B1 /* Info.plist */,
 				89D14E7F1B9AC61F00809099 /* WYMTHD-Prefix.pch */,
 			);
@@ -196,6 +205,17 @@
 				89D14E8B1B9ACAEC00809099 /* UIBarButtonItem+Extension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		BA1E197C1BA9105C00C3626F /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				BA1E197D1BA9105C00C3626F /* categories.plist */,
+				BA1E197E1BA9105C00C3626F /* cities.plist */,
+				BA1E197F1BA9105C00C3626F /* cityGroups.plist */,
+				BA1E19801BA9105C00C3626F /* sorts.plist */,
+			);
+			path = Plist;
 			sourceTree = "<group>";
 		};
 		BAF5435D1B9D2B8700F23D26 /* Model */ = {
@@ -298,9 +318,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1E19811BA9105C00C3626F /* categories.plist in Resources */,
 				BAF543681B9D321300F23D26 /* WYHomeDropDown.xib in Resources */,
+				BA1E19841BA9105C00C3626F /* sorts.plist in Resources */,
 				89608A521B9ABF1E00C910B1 /* Images.xcassets in Resources */,
+				BA1E19821BA9105C00C3626F /* cities.plist in Resources */,
 				BAF543631B9D2BBC00F23D26 /* WYHomeTopItem.xib in Resources */,
+				BA1E19831BA9105C00C3626F /* cityGroups.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,13 @@
     return [[[NSBundle mainBundle] loadNibNamed:@"WYHomeTopItem" owner:nil options:nil] lastObject];
 }
 
+// 不让子控件受自动布局影响
+- (void)awakeFromNib
+{
+    self.autoresizingMask = UIViewAutoresizingNone;
+}
+
+
 
 // 按钮的监听方法
 - (void)addTarget:(id)target action:(SEL)action
